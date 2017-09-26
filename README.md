@@ -23,5 +23,5 @@
   - [serilog-extensions-logging-applicationinsights](https://github.com/micdenny/serilog-extensions-logging-applicationinsights) estensione per pushare i log su application insights
   - estensione per loggere il dettaglio delle richieste HTTP: RequestLoggerMiddleware (vedi sorgente progetto di esempio)
 - ASP.NET Core MVC
-  - mostrare come finalmente il template sia praticamente identico, semplicemente con alcune estensioni in più aggiunte in fase di startup e le folder contenenti le parti statiche
+  - finalmente un template praticamente identico alle Web API grazie al middleware estensibile, semplicemente con alcune estensioni in più aggiunte in fase di startup e le folder contenenti le parti statiche
 - Riutilizzare gli stessi concetti e applicarli su una console app, perchè no?
