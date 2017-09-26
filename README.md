@@ -1,2 +1,27 @@
-# AspNetCoreSwissArmyKnife
-KLab 2017 #05 - .NET Core Swiss Army Knife - Samples
+# KLab 2017 #05 - .NET Core Swiss Army Knife
+
+- [ASP.NET Core Web API](https://github.com/aspnet/Mvc)
+  - panoramica main function e startup
+  - main function v1 vs v2: CreateDefaultBuilder, anche no!!
+  - novità del WebHostBuilder v2: configuration e logging prima dello startup
+  - publish v1 vs v2: runtime store, e finalmente un output di binari un po' più contenuta e views pre-compilate
+- [Hosting](https://github.com/aspnet/Hosting)
+  - [Kestrel](https://github.com/aspnet/KestrelHttpServer)
+  - [IIS](https://github.com/aspnet/AspNetCoreModule)
+- [Logging](https://github.com/aspnet/Logging)
+  - [serilog](https://github.com/serilog/serilog)
+  - [serilog-extensions-logging-file](https://github.com/serilog/serilog-extensions-logging-file) estensione per aggiungere il log su file con una linea di codice: (attenzione a fileSizeLimitBytes e retainedFileCountLimit per limitare ulteriormente i log file)
+- [Configuration](https://github.com/aspnet/Configuration)
+  - [Options](https://github.com/aspnet/Options)
+- Finalmente un semplice e leggero IoC container integrato nel framework
+  - [Microsoft.Extensions.DependencyInjection](https://github.com/aspnet/DependencyInjection) (gestito dal team asp.net)
+- [Swagger](https://swagger.io/)
+  - [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
+- Accesso ai dati
+  - [Entity Framework Core](https://github.com/aspnet/EntityFrameworkCore)
+- Estensibilità netcore:
+  - [serilog-extensions-logging-applicationinsights](https://github.com/micdenny/serilog-extensions-logging-applicationinsights) estensione per pushare i log su application insights
+  - estensione per loggere il dettaglio delle richieste HTTP: RequestLoggerMiddleware (vedi sorgente progetto di esempio)
+- ASP.NET Core MVC
+  - mostrare come finalmente il template sia praticamente identico, semplicemente con alcune estensioni aggiunge in fase di startup e le folder contenenti le parti statiche
+- Riutilizzare gli stessi concetti e applicarli su una console app, perchè no?
