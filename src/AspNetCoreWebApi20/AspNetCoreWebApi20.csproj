@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+        
+        <!--<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>-->
+        
+        <!--<RuntimeIdentifier>win-x64</RuntimeIdentifier>-->
+        
+        <!--<RuntimeIdentifiers>win-x64;linux-x64;osx-x64</RuntimeIdentifiers>-->
+        
+        <!-- SCD: dotnet publish -c Release -r linux-x64 -->
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+    </ItemGroup>
+
+</Project>

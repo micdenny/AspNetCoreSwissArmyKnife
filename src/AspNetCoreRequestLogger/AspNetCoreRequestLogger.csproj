@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <ApplicationInsightsResourceId>/subscriptions/0c345808-6da3-4b7a-a237-59d654fb2d1c/resourcegroups/AspNetCoreRequestLogger/providers/microsoft.insights/components/AspNetCoreRequestLogger</ApplicationInsightsResourceId>
+        <ApplicationInsightsAnnotationResourceId>/subscriptions/0c345808-6da3-4b7a-a237-59d654fb2d1c/resourcegroups/AspNetCoreRequestLogger/providers/microsoft.insights/components/AspNetCoreRequestLogger</ApplicationInsightsAnnotationResourceId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+        <PackageReference Include="Serilog.Extensions.Logging.ApplicationInsights" Version="1.1.0" />
+        <PackageReference Include="SwashBuckle.AspNetCore" Version="1.0.0" />
+        <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0-dev-00023" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <WCFMetadata Include="Connected Services" />
+    </ItemGroup>
+
+</Project>
